@@ -13,3 +13,7 @@ npm i -D @types/node@20.14.14 @types/uuid@10.0.0 @types/numeral@2.0.5
 ### Tailwind install
 
 npm i -D prettier@3.3.3 prettier-plugin-tailwindcss@0.6.5 tailwind-merge@2.4.0
+
+### Redux toolkit
+
+npm i react-redux@9.1.2 @reduxjs/toolkit@2.2.7 redux-persist@6.0.0 dotenv@16.4.5
