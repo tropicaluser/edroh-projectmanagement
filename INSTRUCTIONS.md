@@ -43,4 +43,11 @@ npx tsc --init
 ```bash
 npm i prisma@5.17.0 @prisma/client@5.18.0
 npx prisma init
+> edit .env (neon.db)
+DATABASE_URL=(neon db url)
+npx prisma generate
+npx prisma migrate dev --name init
+npm run seed
 ```
+
+### Backend install
