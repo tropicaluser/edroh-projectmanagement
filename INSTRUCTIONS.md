@@ -63,8 +63,62 @@ curl http://localhost:8000 #This is home route
 
 ### Projects Backend
 
+in PostgreSQL editor (neon.tech):
+SELECT setval(pg_get_serial_sequence('"Project"', 'id'), coalesce(max(id)+1, 1), false) FROM "Project";
+SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1, 1), false) FROM "Task";
+
+in Postman:
+POST http://localhost:8000/projects
+
+```json
+{
+  "name": "test project",
+  "description": "test description",
+  "startDate": "2024-11-09T00:00:00Z",
+  "endDate": "2024-11-20T00:00:00Z"
+}
+```
+
+GET http://localhost:8000/tasks?projectId=1
+
+POST http://localhost:8000/tasks
+
+```json
+{
+    "title": "New Task",
+    "description": "new task description",
+    "status": "To Do",
+    "priority": "High",
+    "tags": "Deployment",
+    "startDate": "2024-02-10T00:00:00.000Z",
+    "dueDate": "2024-06-10T00:00:00.000Z",
+    "points": null,
+    "projectId": 1,
+    "authorUserId": 2,
+    "assignedUserId": 4
+}
+```
+
 ```bash
 curl http://localhost:8000/projects
 curl http://localhost:8000/tasks?projectId=1
-curl http://localhost:8000/tasks?projectId=2
 ```
+
+### Projects Frontend Modal
+
+visit localhost
+create new task
+
+```bash
+test task
+test description
+toDo
+backlog
+2024-11-09
+2024-11-20
+2
+```
+
+Creates new task
+
+
