@@ -60,3 +60,11 @@ PORT=8000
 npm run dev
 curl http://localhost:8000 #This is home route
 ```
+
+### Projects Backend
+
+```bash
+curl http://localhost:8000/projects
+curl http://localhost:8000/tasks?projectId=1
+curl http://localhost:8000/tasks?projectId=2
+```
