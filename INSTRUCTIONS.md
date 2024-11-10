@@ -121,4 +121,7 @@ backlog
 
 Creates new task
 
+### Search
 
+npm i lodash@4.17.21
+npm i -D @types/lodash@4.17.7
