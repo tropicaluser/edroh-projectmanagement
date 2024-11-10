@@ -144,5 +144,6 @@ export const {
   useUpdateTaskStatusMutation,
   useSearchQuery,
   useGetUsersQuery,
-  useGetTeamsQuery
+  useGetTeamsQuery,
+  useGetTasksByUserQuery
 } = api;
