@@ -199,11 +199,11 @@ name: pm_internet-gateway
 
 Create internet gateway
 
-- Actions - Attach to VPC - pm_vpc - Attach internet gateway
+- Actions - Attach to VPC - `pm_vpc` - Attach internet gateway
 
 #### Overview resources
 
-Tab - Your VPCs - tick pm_vpc - Resource map (overview of resources)
+Tab - Your VPCs - tick `pm_vpc` - Resource map (overview of resources)
 
 #### Route tables
 
@@ -216,7 +216,7 @@ VPC: pm_vpc
 
 Create route table
 
-Actions - Edit subnet associations - tick pm_public-subnet-1
+Actions - Edit subnet associations - tick `pm_public-subnet-1`
 Save associations
 
 Tab - Route tables - Create route table
