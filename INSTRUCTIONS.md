@@ -228,7 +228,7 @@ VPC: pm_vpc
 
 Create route table
 
-Actions - Edit subnet associations - tick pm_private-subnet-1
+Actions - Edit subnet associations - tick `pm_private-subnet-1`
 Save associations
 
 Tab - Route tables - Create route table
@@ -240,12 +240,12 @@ VPC: pm_vpc
 
 Create route table
 
-Actions - Edit subnet associations - tick pm_private-subnet-2
+Actions - Edit subnet associations - tick `pm_private-subnet-2`
 Save associations
 
 #### Give public route table internet access
 
-Tab - Route tables - tick pm_public-route-table-1
+Tab - Route tables - tick `pm_public-route-table-1`
 Routes - Edit routes - Add route
 
 ```bash
@@ -428,9 +428,9 @@ Create database (Wait until Available)
 
 Tab - Databases - click entity - Connectivity & Security - Security
 
-- VPC security groups - click pm-rds-sg
+- VPC security groups - click `pm-rds-sg`
 
-- tick entity (pm-rds-sg) - Inbound rules - Edit inbound rules - Add rule
+- tick entity `pm-rds-sg` - Inbound rules - Edit inbound rules - Add rule
 
 ```bash
 Type: PostgreSQL
@@ -442,7 +442,7 @@ Save rules
 
 #### Get outbound traffic from EC2
 
-AWS EC2 - Instances - click entity instance id - Security - click Security group (pm_ec2-sg) - Outbound rules - Edit outbound rules - Add rule
+AWS EC2 - Instances - click entity instance id - Security - click Security group `pm_ec2-sg` - Outbound rules - Edit outbound rules - Add rule
 
 ```bash
 Type: PostgreSQL
